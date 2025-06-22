@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: g1lm60i3u-go
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: g1lm60i3u-go 
+  name: g1lm60i3u-go
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: g1lm60i3u-go 
